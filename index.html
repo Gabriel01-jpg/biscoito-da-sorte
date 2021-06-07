@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscoito da sorte</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $('#preloader .inner').fadeOut(3000);
+      $('#preloader').fadeOut(5000);
+      $('body').delay().css({ 'overflow': 'visible' });
+    })
+  </script>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="inner">
+      <img src="assets/images/background.png" width="300" height="169">
+      <div class="bolas">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</body>
+
+
+</html>
