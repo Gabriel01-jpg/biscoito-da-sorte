@@ -10,24 +10,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(window).on('load', function () {
-      $('#preloader .inner').fadeOut(3000);
-      $('#preloader').fadeOut(5000);
-      $('body').delay().css({ 'overflow': 'visible' });
+      $('.inner').fadeOut(5000);
     })
   </script>
 </head>
 
 <body>
-  <div id="preloader">
-    <div class="inner">
+    <div id="bis-love">
       <img src="assets/images/background.png" width="300" height="169">
+    </div>
+    
+    <!-- Animação de carregamento -->
+    <div class="inner">
       <div class="bolas">
         <div></div>
         <div></div>
         <div></div>
       </div>
     </div>
-  </div>
+
   <div></div>
 </body>
 
