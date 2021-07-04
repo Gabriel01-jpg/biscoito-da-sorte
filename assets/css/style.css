@@ -1,23 +1,27 @@
 body {
-  overflow: hidden;
   background-color:orange ;
 }
- 
- 
-#preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: orange; /* cor do background que vai ocupar o body */
-    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+
+/*Tratamento da img logo*/
+
+div#bis-love {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
 }
-#preloader .inner {
-    position: absolute;
-    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
-    left: 50%;
-    transform: translate(-50%, -50%);  
+
+div#bis-love img{
+  transition: width 2s, height 2s;
+}
+div#bis-love img:hover{
+  width: 315px;
+  height: 175px;
+}
+ 
+/*Animação de carregamento*/ 
+.inner {
+    top: 50vh; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50vh;
 }
 .bolas {
   display: flex;
@@ -68,4 +72,6 @@ body {
     opacity: 1; 
   } 
 }
+
+
 
